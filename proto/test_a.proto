@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package dto;
+option go_package = "/dto";
+
+import "test_common.proto";
+
+
+message fooReq {
+  int64 id = 1;
+  string name = 2;
+}
+
+message fooRes {
+  repeated Fruit allFruits = 1; // 所有水果 @{required}
+  Fruit myFruit = 2;
+  int32 id = 3;
+  Color color = 4;
+  map<string,string> dict = 5;
+}
+

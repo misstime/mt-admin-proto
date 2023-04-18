@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package dto;
+option go_package = "/dto";
+
+import "google/protobuf/any.proto";
+
+
+enum Code {
+  Code_Invalid = 0;
+  Code_OK = 200;
+  Code_NotFound = 404;
+}
+
+message Response {
+  Code code = 1;
+  string msg = 2;
+  google.protobuf.Any data = 3;
+}
+
+enum Color {
+  Color_Invalid = 0;
+  Color_Red = 1;
+  Color_Green = 2;
+}
+
+message Fruit {
+  Color color = 1;
+  string name = 2;
+}
