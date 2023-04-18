@@ -1,17 +1,17 @@
 syntax = "proto3";
 
 package dto;
-option go_package = "/";
+option go_package = "/dto";
 
 import "test_common.proto";
 
 
-message fooReq {
+message FooReq {
   int64 id = 1;
   string name = 2;
 }
 
-message fooRes {
+message FooRes {
   repeated Fruit allFruits = 1; // 所有水果 @{required}
   Fruit myFruit = 2;
   int32 id = 3;
