@@ -8,7 +8,7 @@ set ROOT_DIR=%~dp0
 set PROTOC_FILE=%ROOT_DIR%tool\protoc-22.3-win64\bin\protoc.exe
 set PLUGIN_FILE=%ROOT_DIR%tool\protoc-gen-go-mt.exe
 set PROTO_DIR=%ROOT_DIR%proto\
-set OUT_DIR=d:\misstime\mt-admin-go\
+set OUT_DIR=d:\misstime\mt-admin-go\dto
 echo 项目根目录： %ROOT_DIR%
 echo protoc文件路径： %PROTOC_FILE%
 echo 插件文件路径： %PLUGIN_FILE%
