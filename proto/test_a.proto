@@ -17,5 +17,7 @@ message FooRes {
   int32 id = 3;
   Color color = 4;
   map<string,string> dict = 5;
+  int64 bid = 6;
+  uint64 ubid = 7;
 }
 
